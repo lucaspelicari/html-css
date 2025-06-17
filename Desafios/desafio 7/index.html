@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>Você esta vendo a imagfem completa? vamos tentar amplicar sem usar programação</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1300px)" srcset="imagens/paisagem-m.png" type="image/pmg">
+        <img src="imagens/paisagem-g.png" alt="imagem teste">
+    </picture>
+</body>
+</html>
