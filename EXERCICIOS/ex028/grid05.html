@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .caixa1 {
+            background-color: aquamarine;
+            grid-area: 1 / 1/ 2 / 5;
+
+
+        }
+
+        .caixa2 {
+            background-color: brown;
+            grid-area: 2 / 1 / 4 / 3;
+        }
+
+        .caixa3 {
+            background-color: lightsalmon;
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa1">Caixa 1</div>
+        <div class="caixa2">Caixa 2</div>
+        <div class="caixa3">Caixa 3</div>
+    </div>
+</body>
+</html>
